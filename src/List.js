@@ -9,10 +9,10 @@ function List(props) {
             <h2>{props.header}</h2>
           </header>
           <div className='List-cards'>
-            {props.cards.map((card) =>
-              <Card
+            {props.cards.map((card) => //Iterate through the cards prop passed from App
+              <Card //For each card, pass a key, title, and content prop to Card
                 key={card.id}
-                title={card.title}
+                title={card.title} 
                 content={card.content}
               />
             )}

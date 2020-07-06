@@ -5,7 +5,7 @@ import STORE from './store';
 import './index.css';
 
 ReactDOM.render(
-  <App store={STORE}>
+  <App store={STORE}> {/* pass the STORE object to App */}
   </App>,
   document.getElementById('root')
 );
