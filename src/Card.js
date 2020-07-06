@@ -5,8 +5,9 @@ import './Card.css';
 function Card(props) {
     return (
         <div className="Card">
-            <h3>I'm a card</h3>
-            <p>I'm a paragraph</p>
+            <button type="button">delete</button>
+            <h3>{props.title}</h3>
+            <p>{props.content}</p>
         </div>
 
     );

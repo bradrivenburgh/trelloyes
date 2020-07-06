@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Card from './Card';
 import List from './List';
-import STORE from './store';
 
 
 function App(props) {
@@ -12,8 +11,8 @@ function App(props) {
         <h1>Trelloyes!</h1>
       </header>
       <div className='App-list'>
-        <List header={STORE.lists.header}>
-          <Card title={STORE.allCards.title} content={STORE.allCards.content} />
+        <List header={props.store.lists[0].header}>
+          <Card title={props.store.allCards.title} content={props.store.allCards.content} />
         </List>
       </div>  
     </main>  
